@@ -65,7 +65,7 @@
       "label": "Only monitor for these branches",
       "defaultValue": "",
       "required": false,
-      "helpMarkDown": "Only call monitor when on the supplied branches or when no filter is entered. Seperate options by `;` or each on a newline. Supports wildcards. Will match against `$(Build.SourceBranch)`.",
+      "helpMarkDown": "Only call monitor when on the supplied branches or when no filter is entered. Seperate options by `;` or each on a newline. Supports wildcards. Will match against `$(Build.SourceBranch)`.<br />e.g. `/heads/refs/master;/heads/refs/hotfix/*",
       "type": "multiLine",
       "properties": {
         "resizable": true,
@@ -179,7 +179,7 @@
     },
     {
       "defaultValue": "",
-      "helpMarkdown": "Full path to where snyk is located (for when snyk is not part of the path). (e.g.: `$(Agent.Workfolder)\\tools\\node_modules\\.bin\\snyk.cmd`).",
+      "helpMarkdown": "Full path to where snyk is located (for when snyk is not part of the path). (e.g.: `$(Build.SourcesDirectory)\\node_modules\\.bin\\snyk.cmd`).",
       "label": "Path to Snyk",
       "name": "pathToSnyk",
       "required": true,

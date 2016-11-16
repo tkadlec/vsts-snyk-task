@@ -32,9 +32,10 @@ This task depends on snyk, which is not bundled in the current version. There ar
   * Optionally add its path to the systems path environment variable
   * Or supply the path to snyk in the 'Path to Snyk' input
 
+Find the task in the Utility category of both Build and Release.
+
 # Future options
  
- * Auto-install of snyk when needed.
  * Wildcard support in path to project?
 
 # Documentation
